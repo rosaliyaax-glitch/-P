@@ -1,0 +1,547 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    height: 100vh;
+
+    overflow: hidden;
+
+    font-family: "Segoe Print", "Comic Sans MS", cursive;
+
+    background: #ffd7e8;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    transition: 2s ease;
+
+}
+
+
+
+/* CURSOR */
+
+#cursor {
+
+    position: fixed;
+
+    font-size: 30px;
+
+    pointer-events: none;
+
+    z-index: 999;
+
+}
+
+
+
+/* SPARKLES */
+
+#sparkles {
+
+    position:absolute;
+
+    inset:0;
+
+    overflow:hidden;
+
+}
+
+
+.sparkle {
+
+    position:absolute;
+
+    color:#a8ff5a;
+
+    animation:fall linear infinite;
+
+}
+
+
+
+@keyframes fall {
+
+    from {
+
+        transform:translateY(-20vh) rotate(0deg);
+
+    }
+
+
+    to {
+
+        transform:translateY(120vh) rotate(360deg);
+
+    }
+
+}
+
+
+
+
+
+
+
+
+/* COVER PAGE */
+
+
+#cover {
+
+    text-align:center;
+
+    position:relative;
+
+}
+
+
+
+.scrapbook-title h1 {
+
+    font-size:90px;
+
+    color:#70435e;
+
+    transform:rotate(-5deg);
+
+}
+
+
+
+.scrapbook-title p {
+
+    font-size:24px;
+
+    color:#87586e;
+
+    margin:20px;
+
+}
+
+
+
+.scrapbook-title small {
+
+    color:#a2788c;
+
+}
+
+
+
+
+button {
+
+    margin-top:30px;
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#fff4fa;
+
+    color:#70435e;
+
+    font-size:20px;
+
+    font-family:inherit;
+
+    cursor:pointer;
+
+    box-shadow:0 8px 20px #0002;
+
+    transition:.4s;
+
+}
+
+
+
+button:hover {
+
+    transform:scale(1.1) rotate(-3deg);
+
+}
+
+
+
+
+
+
+/* DOODLES */
+
+
+.doodle {
+
+    position:absolute;
+
+    font-size:45px;
+
+    animation:wobble 3s infinite;
+
+}
+
+
+
+@keyframes wobble {
+
+    50% {
+
+        transform:rotate(10deg) translateY(-8px);
+
+    }
+
+}
+
+
+
+.cat.one {
+
+    top:-100px;
+
+    left:-120px;
+
+}
+
+
+
+.cat.two {
+
+    bottom:-100px;
+
+    right:-120px;
+
+}
+
+
+
+.cloud.one {
+
+    top:-120px;
+
+    right:40px;
+
+}
+
+
+
+.star.one {
+
+    top:50px;
+
+    left:80px;
+
+}
+
+
+
+.star.two {
+
+    bottom:80px;
+
+    left:40px;
+
+}
+
+
+
+.flower.one {
+
+    top:80px;
+
+    right:100px;
+
+}
+
+
+
+.flower.two {
+
+    bottom:50px;
+
+    right:70px;
+
+}
+
+
+
+.paw {
+
+    bottom:-30px;
+
+    left:200px;
+
+}
+
+
+
+.tapir {
+
+    top:150px;
+
+    left:-130px;
+
+}
+
+
+
+
+
+
+
+/* GARDEN */
+
+
+#garden {
+
+    display:none;
+
+    text-align:center;
+
+    background:#b8ff78;
+
+    width:100vw;
+
+    height:100vh;
+
+    padding-top:150px;
+
+}
+
+
+
+.garden-items {
+
+    font-size:50px;
+
+    animation:bloom 2s infinite;
+
+}
+
+
+
+@keyframes bloom {
+
+    50% {
+
+        transform:scale(1.1);
+
+    }
+
+}
+
+
+#garden h1 {
+
+    font-size:50px;
+
+    color:#316b35;
+
+}
+
+
+#garden p {
+
+    margin:20px;
+
+    color:#426b42;
+
+}
+
+
+
+
+
+
+.energyBox {
+
+    width:300px;
+
+    height:18px;
+
+    background:white;
+
+    border-radius:20px;
+
+    margin:40px auto;
+
+    overflow:hidden;
+
+}
+
+
+
+#energyBar {
+
+    width:0%;
+
+    height:100%;
+
+    background:#ff8fc4;
+
+    transition:.4s;
+
+}
+
+
+
+
+
+
+
+
+/* LETTER */
+
+
+#letter {
+
+    display:none;
+
+}
+
+
+
+.envelope {
+
+    position:relative;
+
+}
+
+
+
+.letter-paper {
+
+    background:#ffeecb;
+
+    width:75vw;
+
+    max-width:600px;
+
+    min-height:450px;
+
+    padding:45px;
+
+    border-radius:15px;
+
+    position:relative;
+
+    box-shadow:0 20px 40px #0003;
+
+}
+
+
+
+.letter-paper:before {
+
+    content:"📎";
+
+    position:absolute;
+
+    top:-25px;
+
+    left:20px;
+
+    font-size:35px;
+
+}
+
+
+
+.pressedRose {
+
+    position:absolute;
+
+    right:40px;
+
+    bottom:35px;
+
+    font-size:60px;
+
+    opacity:.7;
+
+    transform:rotate(-20deg);
+
+}
+
+
+
+#typing {
+
+    margin-top:25px;
+
+    line-height:1.7;
+
+    color:#5d4537;
+
+    white-space:pre-line;
+
+}
+
+
+
+
+
+
+/* ENDING */
+
+
+#ending {
+
+    display:none;
+
+    text-align:center;
+
+}
+
+
+
+.bouquet {
+
+    font-size:130px;
+
+    animation:pop 1s;
+
+}
+
+
+
+.teddy {
+
+    font-size:100px;
+
+}
+
+
+
+#arrow {
+
+    font-size:90px;
+
+}
+
+
+
+@keyframes pop {
+
+    from {
+
+        transform:scale(0);
+
+    }
+
+    to {
+
+        transform:scale(1);
+
+    }
+
+}
