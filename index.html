@@ -16,59 +16,24 @@
 <body>
 
 
-<!-- CURSOR -->
 <div id="cursor">🎀</div>
 
 
-<!-- SPARKLES -->
-<div id="sparkles"></div>
-
-
-
-
-<!-- PAGE 1: SCRAPBOOK COVER -->
+<!-- PAGE 1 -->
 
 <section id="cover">
 
+    <div class="doodle">🐱</div>
+    <div class="doodle">🐽</div>
+    <div class="doodle">🌸</div>
+    <div class="doodle">⭐</div>
+    <div class="doodle">☁️</div>
 
-    <div class="doodle cat one">🐱</div>
-    <div class="doodle cat two">🐈</div>
+    <h1>yo.</h1>
 
-    <div class="doodle cloud one">☁️</div>
-
-    <div class="doodle star one">⭐</div>
-    <div class="doodle star two">✦</div>
-
-    <div class="doodle flower one">🌸</div>
-    <div class="doodle flower two">🌷</div>
-
-    <div class="doodle paw">🐾</div>
-
-    <div class="doodle tapir">
-        🐽
-    </div>
-
-
-
-    <div class="scrapbook-title">
-
-        <h1>
-            yo.
-        </h1>
-
-
-        <p>
-            you found something 👀
-        </p>
-
-
-        <small>
-            (a suspicious little scrapbook page)
-        </small>
-
-
-    </div>
-
+    <p>
+        you found something 👀
+    </p>
 
 
     <button id="openGarden">
@@ -82,20 +47,9 @@
 
 
 
+<!-- PAGE 2 -->
 
-
-
-<!-- PAGE 2: FLOWER GARDEN -->
-
-<section id="garden">
-
-
-    <div class="garden-items">
-
-        🌷 🌸 🦋 🌼 🌿 🦋 🌸 🌷
-
-    </div>
-
+<section id="garden" class="hidden">
 
 
     <h1>
@@ -108,11 +62,9 @@
     </p>
 
 
-
     <button id="dabButton">
         dab me up 🤝
     </button>
-
 
 
     <div class="energyBox">
@@ -129,49 +81,30 @@
 
 
 
+<!-- PAGE 3 -->
+
+<section id="letter" class="hidden">
 
 
-
-<!-- PAGE 3: LETTER -->
-
-
-<section id="letter">
+    <div class="paper">
 
 
-    <div class="envelope">
-
-
-        <div class="seal">
-            💗
+        <div class="rose">
+            🌹
         </div>
 
 
-        <div class="envelope-flap"></div>
+        <h2>
+            hey, lil teddy bear 🧸💚
+        </h2>
 
 
-        <div class="letter-paper">
+        <p id="typing"></p>
 
 
-            <div class="pressedRose">
-                🌹
-            </div>
-
-
-            <h2>
-                hey, lil teddy bear 🧸💚
-            </h2>
-
-
-            <p id="typing"></p>
-
-
-
-            <button id="turnPage">
-                turn the page 💗
-            </button>
-
-
-        </div>
+        <button id="turnPage" class="hidden">
+            turn the page 💗
+        </button>
 
 
     </div>
@@ -185,35 +118,19 @@
 
 
 
+<!-- FINAL -->
 
-
-<!-- FINAL PAGE -->
-
-<section id="ending">
-
-
-    <div class="bouquet">
-        💐
-    </div>
-
-
-    <div class="teddy">
-        🧸
-    </div>
-
-
-    <div id="arrow">
-        🏹
-    </div>
-
-
-    <div id="heartRain"></div>
-
+<section id="ending" class="hidden">
 
 
     <h1>
-        surprise complete 💗
+        surprise 💗
     </h1>
+
+
+    <div>
+        💐 🧸 🏹
+    </div>
 
 
 </section>
@@ -223,5 +140,17 @@
 
 
 
+<audio id="music" loop>
 
-<audio id="music"
+<source src="music/melody.mp3">
+
+</audio>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
